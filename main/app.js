@@ -16,21 +16,25 @@ let deletes = document.querySelector("#delet");
 deletes.addEventListener('click', () => {
     registercontainer.style.display = "none";
 })
-let slideindex = 1;
-function showslide(n) {
-    let img = document.querySelector("#img1");
+let slideIndex = 1;
+showSlide(slideIndex);
+function pushSlide(n) {
+    showSlide(slideIndex += n);
+}
+function currentSlide(n) {
+    showSlide(slideIndex = n);
+}
+function showSlide(n) {
+    let img = document.querySelector(".showslide");
     if (n > img.length) {
-        slideindex = 1;
+        slideIndex = 1;
     }
     if (n < 1) {
-        slideindex = img.length;
+        slideIndex = img.length;
     }
     for (let i = 0; i < img.length; i++) {
         img[i].style.display = "none";
     }
-    img[slideindex - 1].style.display = "block";
+    img[slideIndex - 1].style.display = "block";
 }
-function pushslide(n) {
-    showslide(slideindex += n)
-}
-showslide(slideindex);
+
