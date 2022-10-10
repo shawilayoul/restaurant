@@ -75,7 +75,7 @@
                 </div>
                 <div id="phone" class="contact flex items-center">
                     <div>
-                        <img src="C:\Users\HP\OneDrive\Documents\Restaurant\img\phone.png" alt="" id="imphone">
+                        <!--- <img src="C:\Users\HP\OneDrive\Documents\Restaurant\img\phone.png" alt="" id="imphone">-->
                     </div>
                     <div>
                         <h5>Call us: +33782371177</h5>
@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <div id="clock" class="time flex items-center">
-                    <img src="C:\Users\HP\OneDrive\Documents\Restaurant\img\clock.png" alt="">
+                    <!--<img src="C:\Users\HP\OneDrive\Documents\Restaurant\img\clock.png" alt="">-->
                     <h5>Working Hours:</h5>
                     <h6>mon - sat (8.00am - 12.00am)</h6>
                 </div>
@@ -92,16 +92,32 @@
         <div class="hero flex items center">
             <div id="headercontainer">
                 <h1><b>Welcome to Fresh meal</b></h1>
-                <h2>The world best shopping Website</h2>
-                <p>We’ve reviewed the best healthy meal delivery services out there,</p>
-                <p>so whether you're looking for easy keto meal plans or frozen meals with gluten-free,
-                    dairy-free dietaries,</p>
-                <p>these services promise feel-good food, fuss-free</p>
+                <h2>The World Best <span id="shop">Shopping</span> Website</h2>
+                <section id="sect1">
+                    <p>We’ve reviewed the best healthy meal delivery services out there,</p>
+                    <p>so whether you're looking for easy keto meal plans or frozen meals with gluten-free,
+                        dairy-free dietaries,</p>
+                    <p>these services promise feel-good food, fuss-free</p>
+                </section>
                 <div>
-                    <button>Read More</button>
-                    <button>Shop Now</button>
+                    <button id="btnread">Read More</button>
+                    <button id="btnshop">Shop Now</button>
                 </div>
             </div>
+        </div>
+        <div class="productcontainer">
+            <section id="sect2">
+                <h1>Top Products</h1>
+                <div id="imginrow">
+                    <div id="img1"><img src="C:\Users\HP\OneDrive\Documents\Restaurant\img\img1.jpg" alt=""></div>
+                    <div id="img1"><img src="C:\Users\HP\OneDrive\Documents\Restaurant\img\img2.jpg" alt=""></div>
+                    <div id="img1"><img src="C:\Users\HP\OneDrive\Documents\Restaurant\img\img3.jpg" alt=""></div>
+                    <div id="img1"><img src="C:\Users\HP\OneDrive\Documents\Restaurant\img\img4.jpg" alt=""></div>
+                    <div id="img1"><img src="C:\Users\HP\OneDrive\Documents\Restaurant\img\img5.jpg" alt=""></div>
+                    <a class="prev" onclick="pushslide(-1)">&#10094;</a>
+                    <a class="next" onclick="pushslide(1)">&#10095;</a>
+                </div>
+            </section>
         </div>
     </div>
     <script src="app.js"></script>

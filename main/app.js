@@ -16,3 +16,21 @@ let deletes = document.querySelector("#delet");
 deletes.addEventListener('click', () => {
     registercontainer.style.display = "none";
 })
+let slideindex = 1;
+function showslide(n) {
+    let img = document.querySelector("#img1");
+    if (n > img.length) {
+        slideindex = 1;
+    }
+    if (n < 1) {
+        slideindex = img.length;
+    }
+    for (let i = 0; i < img.length; i++) {
+        img[i].style.display = "none";
+    }
+    img[slideindex - 1].style.display = "block";
+}
+function pushslide(n) {
+    showslide(slideindex += n)
+}
+showslide(slideindex);
