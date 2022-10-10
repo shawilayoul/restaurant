@@ -25,7 +25,7 @@ function currentSlide(n) {
     showSlide(slideIndex = n);
 }
 function showSlide(n) {
-    let img = document.querySelector(".showslide");
+    let img = document.getElementsByClassName("showslide");
     if (n > img.length) {
         slideIndex = 1;
     }
