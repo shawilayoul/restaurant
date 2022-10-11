@@ -40,7 +40,7 @@ h2 {
     color: black;
 }
 
-#headercontainer {
+.backgroundimg {
     background-image: url("https://images.unsplash.com/photo-1620706857370-e1b9770e8bb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlc2glMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
     background-size: 100% 100%;
     width: 100%;
@@ -58,78 +58,8 @@ h2 {
     padding-top: 40px;
 }
 
-.viewmore {
-    margin-top: 50%;
-    background-color: beige;
-}
-
 .next-center {
     text-align: center;
-}
-
-#btnview {
-    display: inline-block;
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 0.75rem 0.75rem;
-    border-radius: 4px;
-    line-height: 0.8;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: 0.4s all ease;
-}
-
-#btnview:hover {
-    background-color: white;
-    color: black;
-}
-
-img {
-    vertical-align: middle;
-}
-
-.imgcontainer {
-    position: absolute;
-    display: flex;
-    margin-left: 25%;
-    margin-top: 8%;
-}
-
-.showslide {
-    display: none;
-}
-
-
-.prev,
-.next {
-    width: 2%;
-    cursor: pointer;
-    position: absolute;
-    color: blue;
-    top: 25%;
-    margin-top: -25px;
-    padding: 18px;
-    font-size: 18px;
-    font-weight: bold;
-    transition: 0.6s ease;
-    user-select: none;
-    -webkit-user-select: none;
-    border-radius: 0 3px 3px 0;
-}
-
-.next {
-    right: 29%;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev {
-    right: 99%;
-}
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #topnav {
@@ -143,7 +73,7 @@ img {
     color: black;
     display: flex;
     justify-content: center;
-    padding: 14px 20px;
+    padding: 13px 19px;
     text-decoration: none;
     font-size: 17px;
     display: inline-block;
@@ -151,11 +81,13 @@ img {
 
 #topnav a:hover {
     background-color: orange;
+    border-radius: 5px;
 }
 
 #home {
     background-color: orange;
     padding: 14px 20px;
+    border-radius: 5px;
 }
 
 #phone {
@@ -193,6 +125,7 @@ img {
 #card a:hover {
     background-color: orange;
     color: black;
+    border-radius: 5px;
 }
 
 #loginform {
@@ -212,23 +145,42 @@ img {
 #userform {
     background-color: #f1f1f1;
     margin: 20px auto 0 auto;
-    border: 2px solid #888;
+    border: none;
     width: 40%;
     height: 55%;
+    border-radius: 5px;
+}
+
+#btnlogin {
+    margin-top: 10px;
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
 }
 
 .btncontainer {
     background-color: #888;
     padding: 20px;
     margin: 5% auto 15% auto;
+    border-radius: 0 0 5px 5px
 }
 
-#btnlogin {
-    margin: 10px;
-    width: 100%;
-    background-color: green;
-    color: white;
+#cancelbtn {
     padding: 12px 20px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 
 #btnread {
@@ -266,25 +218,9 @@ img {
     color: black;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 10px;
-}
-
 #container {
     padding: 16px;
 }
-
-#cancelbtn {
-    padding: 8px 8px 0 8px;
-    background-color: red;
-    color: white;
-    border-radius: 2px;
-}
-
 
 #pswbtn {
     float: right;
@@ -304,14 +240,33 @@ input[type="email"] {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+#Rinputform {
+    padding: 16px;
+}
+
 #registerform {
     width: 50%;
     height: 60%;
     background-color: #f1f1f1;
     margin: 20px auto 0 auto;
-    border: 1px solid #888;
+    border: none;
     border-radius: 5px;
 }
+
+#btnregister {
+    border: none;
+    background-color: green;
+    color: white;
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+#btnregister:hover {
+    background-color: white;
+    color: green;
+}
+
 
 p {
     margin-left: 20px;
@@ -320,19 +275,118 @@ p {
 
 h1 {
     text-align: center;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
 }
 
-#btnregister {
-    background-color: green;
-    color: white;
+.prev,
+.next {
+    width: 2%;
+    cursor: pointer;
+    position: absolute;
+    color: blue;
+    top: 25%;
+    margin-top: -25px;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.6s ease;
+    user-select: none;
+    -webkit-user-select: none;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 38%;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    right: 60%;
+}
+
+.prev:hover,
+.next:hover {
+    border-radius: 5px;
+    background-color: rgba(210, 168, 31, 0.8);
+}
+
+img {
+    vertical-align: middle;
+}
+
+.imgcontainer {
+    position: absolute;
+    display: flex;
     width: 100%;
-    padding: 20px;
+    justify-content: center;
+    height: 90%;
 }
 
-#btnregister:hover {
-    opacity: 0.4;
+.showslide {
+    background-color: white;
+    display: none;
+    padding: 30px;
+    border-radius: 5px;
+    height: 70%;
 }
 
-#containerform {
-    padding: 16px;
+.text-center {
+    margin-left: 40%;
+}
+
+.price {
+    justify-content: center;
+    margin-left: 50%;
+}
+
+.star {
+    margin-left: 40%;
+}
+
+#btnaddcard {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    margin-left: 34%;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    margin-top: 20px;
+}
+
+#btnaddcard:hover {
+    background-color: orange;
+    color: white;
+}
+
+hr {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.products {
+    width: 100%;
+    margin-bottom: 34%;
+}
+
+#vmore {
+    display: flex;
+    justify-content: center;
+}
+
+#btnview {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 13px 25px;
+    border-radius: 5px;
+    display: flex;
+}
+
+#btnview:hover {
+    background-color: orange;
+    color: white;
 }
