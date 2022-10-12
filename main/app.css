@@ -312,9 +312,6 @@ h1 {
     background-color: rgba(210, 168, 31, 0.8);
 }
 
-img {
-    vertical-align: middle;
-}
 
 .imgcontainer {
     position: absolute;
@@ -372,21 +369,72 @@ hr {
     margin-bottom: 34%;
 }
 
-#vmore {
+.about-fresh {
     display: flex;
     justify-content: center;
 }
 
-#btnview {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    padding: 13px 25px;
+#healthimg {
     border-radius: 5px;
-    display: flex;
 }
 
-#btnview:hover {
+#healthimg:hover {
+    transform: scale(0.9);
+    transition: 0.6s;
+    z-index: 102;
+}
+
+.about-meal {
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+#btnlearnm {
+    margin-top: 10px;
+    padding: 13px 22px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+h3 {
+    margin-left: 3%;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+.beefs {
+    display: inline-block;
+    width: 30%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    background-color: whitesmoke;
+}
+
+#btnlearnm:hover {
+    transform: scale(1.1);
+    transition: 0.6s;
     background-color: orange;
     color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#beef {
+    width: 100%;
+    border-radius: 5px;
+    margin-right: 3%;
+    margin-top: 3%;
+}
+
+#beef:hover {
+    transform: scale(0.9);
+    transition: 0.5s;
 }
