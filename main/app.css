@@ -95,10 +95,18 @@ h2 {
     float: left;
 }
 
+.phoneimg::before {
+    content: url("https://img.icons8.com/windows/25/000000/phone.png");
+}
+
+.clockimg::before {
+    content: url("https://img.icons8.com/arcade/25/000000/experimental-clock-arcade.png");
+}
+
 #clock {
-    padding-right: 20px;
     float: right;
 }
+
 
 #Ricon {
     width: 200px;
@@ -198,10 +206,6 @@ input[type="email"] {
 
 #btnread:hover {
     background-color: #f1f1f1;
-    color: orange;
-}
-
-#shop {
     color: orange;
 }
 
@@ -357,11 +361,6 @@ h1 {
 #btnaddcard:hover {
     background-color: orange;
     color: white;
-}
-
-hr {
-    margin-top: 10%;
-    margin-bottom: 10%;
 }
 
 .products {
@@ -520,41 +519,105 @@ h2 {
 
 .contacts-content {
     background-color: white;
+    margin-bottom: 30px;
 }
 
 .call {
     width: 100%;
     text-align: center;
     margin-top: 20px;
+    margin-top: 30px;
 }
 
 #number::before {
-    content: url("https://codersgyan.github.io/Responsive-restaurant-website/icons/phone-2.svg");
+    content: url("https://img.icons8.com/windows/20/000000/phone.png");
 }
 
 #email::before {
-    content: url("https://codersgyan.github.io/Responsive-restaurant-website/icons/bag-2.svg");
+    content: url("https://img.icons8.com/external-nawicon-detailed-outline-nawicon/20/000000/external-email-communication-nawicon-detailed-outline-nawicon.png");
 }
 
 #working::before {
-    content: url("https://codersgyan.github.io/Responsive-restaurant-website/icons/clock-2.svg");
+    content: url("https://img.icons8.com/ios/20/000000/clock--v1.png");
+}
+
+hr {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: yellow;
 }
 
 .linkcontents {
     width: 100%;
     background-color: #333;
-    height: 70%;
 }
 
 .link {
-    top: 0;
     margin-left: 4%;
-    display: inline-block;
+    display: inline-table;
     width: 20%;
     color: white;
     text-align: center;
 }
 
+#follow a {
+    color: white;
+}
+
+#follow a:hover {
+    color: orange;
+}
+
+#follow {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+h3:hover {
+    color: orange;
+}
+
+.quik a {
+    color: white;
+}
+
+.quik a:hover {
+    color: orange;
+    cursor: pointer;
+}
+
 #linklist {
     margin-top: 20px;
+}
+
+#instagramimg {
+    width: 40%;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    border-radius: 5px;
+}
+
+#instagramimg:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+
+.facebook::before {
+    content: url("https://img.icons8.com/fluency/15/000000/facebook-new.png");
+    margin-left: 15px;
+}
+
+.twitter::before {
+    content: url("https://img.icons8.com/color/15/000000/twitter--v1.png");
+    margin-left: 15px;
+}
+
+.google::before {
+    content: url("https://img.icons8.com/color/15/000000/google-logo.png");
+    margin-left: 15px;
+}
+
+.instagram::before {
+    content: url("https://img.icons8.com/color/15/000000/instagram-new--v1.png");
+    margin-left: 15px;
 }

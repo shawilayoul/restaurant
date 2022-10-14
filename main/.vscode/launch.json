@@ -1,20 +1,13 @@
-//{
-//"configurations": [
-//{
-//"type": "msedge",
-//"name": "app.js",
-//  "request": "launch",
-//    "url": "app.js"
-//  }
-//]
-//}
 {
-    "version": "0.1.0",
-    "command": "explorer",
-    "windows": {
-        "command": "explorer.exe"
-    },
-    "args": [
-        "test.html"
+    "configurations": [
+        {
+            "name": "Attach",
+            "port": 9229,
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node",
+        },
     ]
 }
